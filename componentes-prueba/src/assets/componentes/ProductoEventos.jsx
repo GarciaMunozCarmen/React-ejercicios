@@ -1,8 +1,7 @@
 function ProductoEventos({nombre, precio, cantidad}){
     const info = document.getElementById("info");
     function onMouseEnter() {
-        info.innerHTML = `<span> {precio}€ Quedan {cantidad} unidades</span>`
-        
+        info.innerHTML = `<span> Precio: ` + precio + `€. Quedan ` + cantidad  + ` unidades</span>`
     }
     function onMouseLeave() {
         info.innerHTML = ''
